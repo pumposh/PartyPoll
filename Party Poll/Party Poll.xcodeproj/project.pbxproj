@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F72E9D1219B663E0007EBD4 /* BeginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72E9D0219B663E0007EBD4 /* BeginVC.swift */; };
 		3F7377EB20FAC96F00A2437E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7377EA20FAC96F00A2437E /* AppDelegate.swift */; };
 		3F7377ED20FAC96F00A2437E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7377EC20FAC96F00A2437E /* ViewController.swift */; };
 		3F7377F020FAC97000A2437E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7377EE20FAC97000A2437E /* Main.storyboard */; };
@@ -14,6 +15,17 @@
 		3F7377F520FAC97400A2437E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7377F320FAC97400A2437E /* LaunchScreen.storyboard */; };
 		3F73780020FAC97400A2437E /* Party_PollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7377FF20FAC97400A2437E /* Party_PollTests.swift */; };
 		3F73780B20FAC97400A2437E /* Party_PollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F73780A20FAC97400A2437E /* Party_PollUITests.swift */; };
+		3F77E8BB21B60C1000A0B885 /* LobbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */; };
+		3F77E8C321B6510D00A0B885 /* LobbyPlayerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */; };
+		3F8654D721B3B029008BAEF4 /* colorIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8654D621B3B029008BAEF4 /* colorIDs.swift */; };
+		3FF71DF921B35B6E00A23856 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF71DF821B35B6E00A23856 /* NameVC.swift */; };
+		3FF71DFB21B3770400A23856 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF71DFA21B3770400A23856 /* GoogleService-Info.plist */; };
+		3FF9CEC7218B832E00D0FAB6 /* EaseFromLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9CEC6218B832E00D0FAB6 /* EaseFromLeftSegue.swift */; };
+		3FF9CEC9218B840900D0FAB6 /* EaseFromRightSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9CEC8218B840900D0FAB6 /* EaseFromRightSegue.swift */; };
+		3FF9CECF218D313300D0FAB6 /* JoinGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9CECE218D313300D0FAB6 /* JoinGameVC.swift */; };
+		52009DE145B8C92F43EFAF3E /* Pods_Party_Poll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B24EED859174448E50086B4 /* Pods_Party_Poll.framework */; };
+		D28B38CB381EAFFC3AE05376 /* Pods_Party_PollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AC38B61067D5710660BD90 /* Pods_Party_PollUITests.framework */; };
+		E20D61DEF7CBB20CA01A123C /* Pods_Party_PollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90185DDF30BA7FCA5B0354CC /* Pods_Party_PollTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F72E9D0219B663E0007EBD4 /* BeginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginVC.swift; sourceTree = "<group>"; };
 		3F7377E720FAC96F00A2437E /* Party Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Poll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7377EA20FAC96F00A2437E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7377EC20FAC96F00A2437E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,23 @@
 		3F73780620FAC97400A2437E /* Party PollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Party PollUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F73780A20FAC97400A2437E /* Party_PollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party_PollUITests.swift; sourceTree = "<group>"; };
 		3F73780C20FAC97400A2437E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyVC.swift; sourceTree = "<group>"; };
+		3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LobbyPlayerStackView.swift; path = "Party Poll/Views/LobbyPlayerStackView.swift"; sourceTree = SOURCE_ROOT; usesTabs = 0; };
+		3F8654D621B3B029008BAEF4 /* colorIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colorIDs.swift; path = "Party Poll/Classes/colorIDs.swift"; sourceTree = SOURCE_ROOT; };
+		3FF71DF821B35B6E00A23856 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
+		3FF71DFA21B3770400A23856 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3FF9CEC6218B832E00D0FAB6 /* EaseFromLeftSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseFromLeftSegue.swift; sourceTree = "<group>"; };
+		3FF9CEC8218B840900D0FAB6 /* EaseFromRightSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseFromRightSegue.swift; sourceTree = "<group>"; };
+		3FF9CECE218D313300D0FAB6 /* JoinGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameVC.swift; sourceTree = "<group>"; };
+		469A860A9235BBE20DC59C74 /* Pods-Party PollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party PollTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party PollTests/Pods-Party PollTests.debug.xcconfig"; sourceTree = "<group>"; };
+		631D50F5D85F06898A27BB1C /* Pods-Party PollUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party PollUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party PollUITests/Pods-Party PollUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90185DDF30BA7FCA5B0354CC /* Pods_Party_PollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_PollTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B24EED859174448E50086B4 /* Pods_Party_Poll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_Poll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AB13E88FA8F39D94DD4AAB /* Pods-Party Poll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Poll.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party Poll/Pods-Party Poll.release.xcconfig"; sourceTree = "<group>"; };
+		ADF384078A89C17B5519E2D9 /* Pods-Party PollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party PollTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party PollTests/Pods-Party PollTests.release.xcconfig"; sourceTree = "<group>"; };
+		B090FE81B0316E8363AFD01A /* Pods-Party Poll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party Poll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Party Poll/Pods-Party Poll.debug.xcconfig"; sourceTree = "<group>"; };
+		C3AC38B61067D5710660BD90 /* Pods_Party_PollUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Party_PollUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43D372BCA0ED6DA955EA55D /* Pods-Party PollUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Party PollUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Party PollUITests/Pods-Party PollUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52009DE145B8C92F43EFAF3E /* Pods_Party_Poll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20D61DEF7CBB20CA01A123C /* Pods_Party_PollTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28B38CB381EAFFC3AE05376 /* Pods_Party_PollUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +114,8 @@
 				3F7377FE20FAC97400A2437E /* Party PollTests */,
 				3F73780920FAC97400A2437E /* Party PollUITests */,
 				3F7377E820FAC96F00A2437E /* Products */,
+				BB929C910DEAA35D301D6122 /* Pods */,
+				67AF0EE9BFE5F0CABFCE096E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +132,16 @@
 		3F7377E920FAC96F00A2437E /* Party Poll */ = {
 			isa = PBXGroup;
 			children = (
+				3F8654D821B44176008BAEF4 /* Classes */,
+				3FF9CECD218D311000D0FAB6 /* Views */,
+				3FF9CEC5218B82F200D0FAB6 /* Segues */,
 				3F7377EA20FAC96F00A2437E /* AppDelegate.swift */,
 				3F7377EC20FAC96F00A2437E /* ViewController.swift */,
 				3F7377EE20FAC97000A2437E /* Main.storyboard */,
 				3F7377F120FAC97400A2437E /* Assets.xcassets */,
 				3F7377F320FAC97400A2437E /* LaunchScreen.storyboard */,
 				3F7377F620FAC97400A2437E /* Info.plist */,
+				3FF71DFA21B3770400A23856 /* GoogleService-Info.plist */,
 			);
 			path = "Party Poll";
 			sourceTree = "<group>";
@@ -125,6 +164,58 @@
 			path = "Party PollUITests";
 			sourceTree = "<group>";
 		};
+		3F8654D821B44176008BAEF4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3F8654D621B3B029008BAEF4 /* colorIDs.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3FF9CEC5218B82F200D0FAB6 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9CEC6218B832E00D0FAB6 /* EaseFromLeftSegue.swift */,
+				3FF9CEC8218B840900D0FAB6 /* EaseFromRightSegue.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+		3FF9CECD218D311000D0FAB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9CECE218D313300D0FAB6 /* JoinGameVC.swift */,
+				3F72E9D0219B663E0007EBD4 /* BeginVC.swift */,
+				3FF71DF821B35B6E00A23856 /* NameVC.swift */,
+				3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */,
+				3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67AF0EE9BFE5F0CABFCE096E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B24EED859174448E50086B4 /* Pods_Party_Poll.framework */,
+				90185DDF30BA7FCA5B0354CC /* Pods_Party_PollTests.framework */,
+				C3AC38B61067D5710660BD90 /* Pods_Party_PollUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB929C910DEAA35D301D6122 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B090FE81B0316E8363AFD01A /* Pods-Party Poll.debug.xcconfig */,
+				A1AB13E88FA8F39D94DD4AAB /* Pods-Party Poll.release.xcconfig */,
+				469A860A9235BBE20DC59C74 /* Pods-Party PollTests.debug.xcconfig */,
+				ADF384078A89C17B5519E2D9 /* Pods-Party PollTests.release.xcconfig */,
+				631D50F5D85F06898A27BB1C /* Pods-Party PollUITests.debug.xcconfig */,
+				E43D372BCA0ED6DA955EA55D /* Pods-Party PollUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F73780F20FAC97400A2437E /* Build configuration list for PBXNativeTarget "Party Poll" */;
 			buildPhases = (
+				73D8E323F52C12E7EEE11B2D /* [CP] Check Pods Manifest.lock */,
 				3F7377E320FAC96F00A2437E /* Sources */,
 				3F7377E420FAC96F00A2437E /* Frameworks */,
 				3F7377E520FAC96F00A2437E /* Resources */,
+				356A766F829D7A1E981230EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F73781220FAC97400A2437E /* Build configuration list for PBXNativeTarget "Party PollTests" */;
 			buildPhases = (
+				BB86D5E3C836691F800DF869 /* [CP] Check Pods Manifest.lock */,
 				3F7377F720FAC97400A2437E /* Sources */,
 				3F7377F820FAC97400A2437E /* Frameworks */,
 				3F7377F920FAC97400A2437E /* Resources */,
@@ -167,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F73781520FAC97400A2437E /* Build configuration list for PBXNativeTarget "Party PollUITests" */;
 			buildPhases = (
+				4ED1B02C3013C97DDC89538F /* [CP] Check Pods Manifest.lock */,
 				3F73780220FAC97400A2437E /* Sources */,
 				3F73780320FAC97400A2437E /* Frameworks */,
 				3F73780420FAC97400A2437E /* Resources */,
@@ -193,13 +288,16 @@
 				TargetAttributes = {
 					3F7377E620FAC96F00A2437E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					3F7377FA20FAC97400A2437E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 3F7377E620FAC96F00A2437E;
 					};
 					3F73780520FAC97400A2437E = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 3F7377E620FAC96F00A2437E;
 					};
 				};
@@ -230,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7377F520FAC97400A2437E /* LaunchScreen.storyboard in Resources */,
+				3FF71DFB21B3770400A23856 /* GoogleService-Info.plist in Resources */,
 				3F7377F220FAC97400A2437E /* Assets.xcassets in Resources */,
 				3F7377F020FAC97000A2437E /* Main.storyboard in Resources */,
 			);
@@ -251,13 +350,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		356A766F829D7A1E981230EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Party Poll/Pods-Party Poll-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Party Poll/Pods-Party Poll-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED1B02C3013C97DDC89538F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party PollUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73D8E323F52C12E7EEE11B2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party Poll-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB86D5E3C836691F800DF869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Party PollTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F7377E320FAC96F00A2437E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF9CEC9218B840900D0FAB6 /* EaseFromRightSegue.swift in Sources */,
+				3FF71DF921B35B6E00A23856 /* NameVC.swift in Sources */,
+				3FF9CEC7218B832E00D0FAB6 /* EaseFromLeftSegue.swift in Sources */,
+				3F77E8C321B6510D00A0B885 /* LobbyPlayerStackView.swift in Sources */,
+				3F72E9D1219B663E0007EBD4 /* BeginVC.swift in Sources */,
 				3F7377ED20FAC96F00A2437E /* ViewController.swift in Sources */,
+				3F8654D721B3B029008BAEF4 /* colorIDs.swift in Sources */,
 				3F7377EB20FAC96F00A2437E /* AppDelegate.swift in Sources */,
+				3FF9CECF218D313300D0FAB6 /* JoinGameVC.swift in Sources */,
+				3F77E8BB21B60C1000A0B885 /* LobbyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +630,7 @@
 		};
 		3F73781020FAC97400A2437E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B090FE81B0316E8363AFD01A /* Pods-Party Poll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,13 +641,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-Poll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3F73781120FAC97400A2437E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AB13E88FA8F39D94DD4AAB /* Pods-Party Poll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,13 +659,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-Poll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		3F73781320FAC97400A2437E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469A860A9235BBE20DC59C74 /* Pods-Party PollTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,7 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-PollTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Party Poll.app/Party Poll";
 			};
@@ -482,6 +687,7 @@
 		};
 		3F73781420FAC97400A2437E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF384078A89C17B5519E2D9 /* Pods-Party PollTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,7 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-PollTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Party Poll.app/Party Poll";
 			};
@@ -502,6 +708,7 @@
 		};
 		3F73781620FAC97400A2437E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631D50F5D85F06898A27BB1C /* Pods-Party PollUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -513,7 +720,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-PollUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Party Poll";
 			};
@@ -521,6 +728,7 @@
 		};
 		3F73781720FAC97400A2437E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43D372BCA0ED6DA955EA55D /* Pods-Party PollUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,7 +740,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pumposh.Party-PollUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Party Poll";
 			};
