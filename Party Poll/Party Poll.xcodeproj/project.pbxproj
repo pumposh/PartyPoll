@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3CD26921B98320006C8D91 /* DeckViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CD26821B98320006C8D91 /* DeckViewCell.swift */; };
 		3F72E9D1219B663E0007EBD4 /* BeginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72E9D0219B663E0007EBD4 /* BeginVC.swift */; };
 		3F7377EB20FAC96F00A2437E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7377EA20FAC96F00A2437E /* AppDelegate.swift */; };
 		3F7377ED20FAC96F00A2437E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7377EC20FAC96F00A2437E /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 		3F77E8BB21B60C1000A0B885 /* LobbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */; };
 		3F77E8C321B6510D00A0B885 /* LobbyPlayerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */; };
 		3F8654D721B3B029008BAEF4 /* colorIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8654D621B3B029008BAEF4 /* colorIDs.swift */; };
+		3FB54B1221C3524E00B381E3 /* DeckScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB54B1121C3524E00B381E3 /* DeckScrollView.swift */; };
 		3FF71DF921B35B6E00A23856 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF71DF821B35B6E00A23856 /* NameVC.swift */; };
 		3FF71DFB21B3770400A23856 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF71DFA21B3770400A23856 /* GoogleService-Info.plist */; };
 		3FF9CEC7218B832E00D0FAB6 /* EaseFromLeftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9CEC6218B832E00D0FAB6 /* EaseFromLeftSegue.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3CD26821B98320006C8D91 /* DeckViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewCell.swift; sourceTree = "<group>"; };
 		3F72E9D0219B663E0007EBD4 /* BeginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginVC.swift; sourceTree = "<group>"; };
 		3F7377E720FAC96F00A2437E /* Party Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Poll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7377EA20FAC96F00A2437E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyVC.swift; sourceTree = "<group>"; };
 		3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LobbyPlayerStackView.swift; path = "Party Poll/Views/LobbyPlayerStackView.swift"; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		3F8654D621B3B029008BAEF4 /* colorIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colorIDs.swift; path = "Party Poll/Classes/colorIDs.swift"; sourceTree = SOURCE_ROOT; };
+		3FB54B1121C3524E00B381E3 /* DeckScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckScrollView.swift; sourceTree = "<group>"; };
 		3FF71DF821B35B6E00A23856 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
 		3FF71DFA21B3770400A23856 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FF9CEC6218B832E00D0FAB6 /* EaseFromLeftSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseFromLeftSegue.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				3FF71DF821B35B6E00A23856 /* NameVC.swift */,
 				3F77E8BA21B60C1000A0B885 /* LobbyVC.swift */,
 				3F77E8C121B62F4900A0B885 /* LobbyPlayerStackView.swift */,
+				3F3CD26821B98320006C8D91 /* DeckViewCell.swift */,
+				3FB54B1121C3524E00B381E3 /* DeckScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -458,8 +464,10 @@
 				3F7377ED20FAC96F00A2437E /* ViewController.swift in Sources */,
 				3F8654D721B3B029008BAEF4 /* colorIDs.swift in Sources */,
 				3F7377EB20FAC96F00A2437E /* AppDelegate.swift in Sources */,
+				3FB54B1221C3524E00B381E3 /* DeckScrollView.swift in Sources */,
 				3FF9CECF218D313300D0FAB6 /* JoinGameVC.swift in Sources */,
 				3F77E8BB21B60C1000A0B885 /* LobbyVC.swift in Sources */,
+				3F3CD26921B98320006C8D91 /* DeckViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

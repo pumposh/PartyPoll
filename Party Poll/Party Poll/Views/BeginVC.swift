@@ -21,6 +21,8 @@ class BeginVC: UIViewController {
     var isUnique: Bool = false
     var currentGame: DataSnapshot = DataSnapshot.init()
     var allGames: DataSnapshot = DataSnapshot.init()
+    var allDecks: DataSnapshot = DataSnapshot.init()
+    var lobbyDecks: [String:String] = [:]
     
     @IBOutlet weak var nameLabel: UILabel!
 
@@ -30,14 +32,14 @@ class BeginVC: UIViewController {
         checkDisplayName()
         defaults.synchronize()
         self.view.backgroundColor = #colorLiteral(red: 0.9386781887, green: 0.9518757931, blue: 0.9419775898, alpha: 1)
+        handle = dbReference.observe(DataEventType.value, with: {(snapshot) in
+            self.allDecks = snapshot.childSnapshot(forPath: "Decks")
+            self.allGames = snapshot.childSnapshot(forPath: "Running Games")
+        })
     }
     
     @IBAction func newGameButtonPressed(_ sender: Any) {
         self.gameCode = self.randomStringWithLength(len: 5)
-
-        handle = dbReference.observe(DataEventType.value, with: {(snapshot) in
-            self.allGames = snapshot
-        })
         
         perform(#selector(checkCode), with: nil, afterDelay: 0.5)
         initializePlayer()
@@ -99,7 +101,9 @@ class BeginVC: UIViewController {
         self.defaults.set(gameCode, forKey: "currentGameCode")
 
         print("Pushing " + displayName + " to game: " + (gameCode as String))
-        self.dbReference.child(gameCode as String).child(uid).setValue(player)
+        
+        self.dbReference.child("Running Games").child(gameCode as String).child("Enabled Decks").setValue(lobbyDecks)
+        self.dbReference.child("Running Games").child(gameCode as String).child("Players").child(uid).setValue(player)
     }
     
     func randomStringWithLength (len : Int) -> NSString {
@@ -117,11 +121,33 @@ class BeginVC: UIViewController {
     }
     
     func checkDisplayName() {
+        //first time opening app
         if self.defaults.string(forKey: "name") == nil
         {
             self.displayName = ""
             print("displayName")
             performSegue(withIdentifier: "editNameSegue", sender: nil)
+            
+            let allowedDecks: [String:String] = ["1": "enabled",
+                                                 "2": "disabled"]
+            
+            print (allDecks.childSnapshot(forPath: "1").value(forKey: "title"))
+            
+            lobbyDecks = self.defaults.object(forKey: "allowedDecks") as? [String : String] ?? allowedDecks
+            
+            for deckToCheck in allDecks.children.allObjects as! [DataSnapshot] {
+                var foundLocally = false
+                for lobbyDeck in lobbyDecks.keys {
+                    if lobbyDeck == deckToCheck.key {
+                        foundLocally = true
+                    }
+                }
+                if foundLocally == false {
+                    lobbyDecks[deckToCheck.key] = "restricted"
+                }
+            }
+            
+            self.defaults.set(allowedDecks, forKey: "allowedDecks")
         }
         else //assign to label if exists
         {

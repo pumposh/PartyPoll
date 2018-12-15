@@ -45,7 +45,7 @@ class JoinGameVC: UIViewController, UITextFieldDelegate {
     
     @objc func continueButtonPressed(_ sender: Any) {
         handle = ref.observe(DataEventType.value, with: {(snapshot) in
-            self.allGames = snapshot
+            self.allGames = snapshot.childSnapshot(forPath: "Running Games")
         })
         perform(#selector(checkForGameCode), with: nil, afterDelay: 0.5)
     }
@@ -96,12 +96,12 @@ class JoinGameVC: UIViewController, UITextFieldDelegate {
             var identifier: UInt = 0
             self.colorID = self.randomStringWithLength(len: 1) as String
             self.uid = self.randomStringWithLength(len: 3) as String
-            for player in currentGame.children.allObjects as! [DataSnapshot] {
+            for player in currentGame.childSnapshot(forPath: "Players").children.allObjects as! [DataSnapshot] {
                 if self.colorID != player.childSnapshot(forPath: "color").value as! String && self.uid != player.key {
                     identifier = identifier + 1
                 }
             }
-            if identifier == currentGame.childrenCount {
+            if identifier == currentGame.childSnapshot(forPath: "Players").childrenCount {
                 isUnique = true
             }
         }
@@ -119,7 +119,7 @@ class JoinGameVC: UIViewController, UITextFieldDelegate {
         self.defaults.set(gameCode, forKey: "currentGameCode")
         
         print("Pushing " + displayName + " to game: " + (gameCode as String))
-        self.ref.child(gameCode as String).child(uid).setValue(player)
+        self.ref.child("Running Games").child(gameCode as String).child("Players").child(uid).setValue(player)
     }
     
     func randomStringWithLength (len : Int) -> NSString {
